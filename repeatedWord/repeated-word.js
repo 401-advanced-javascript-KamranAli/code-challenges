@@ -1,9 +1,9 @@
 function repeatedWord(str) {
-  for(let i = 0; i < str.length; i++) {
-    for(let j = 0; j < str.length; j++) {
-      str.split('');
-      if(str[i] === str[j]){
-        return str[i];
+  const newStr = str.split(' ');
+  for(let i = 0; i < newStr.length; i++) {
+    for(let j = 0; j < newStr.length; j++) {
+      if(newStr[i] === newStr[j]) {
+        return newStr;
       }
     }
   }
